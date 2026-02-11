@@ -22,8 +22,8 @@ This is a **static, canvas-based website** built for Hawkathoon 2026. It uses Ne
 
 ## 🛠 Project Structure
 
-- **`app/`**: Contains the pages (`1/`, `2/`, etc.) and the global layout.
-    - **`app/1/elements.ts`**: The "database" file where Home page content is defined.
+- **`app/`**: Contains the pages (`home/`, `about/`, etc.) and the global layout.
+    - **`app/home/elements.ts`**: The "database" file where Home page content is defined.
 - **`components/`**: React components.
     - **`Canvas.tsx`**: The main area that renders elements.
     - **`Draggable.tsx`**: Wraps content to enable drag-and-drop.

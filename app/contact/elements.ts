@@ -1,5 +1,5 @@
 
-import { CanvasElement } from '../1/elements';
+import { CanvasElement } from '../home/elements';
 
 export const elements: CanvasElement[] = [
     {
