@@ -1,6 +1,6 @@
-# Hawkathoon 2025 Website
+# Hawkathoon 2026 Website
 
-This is a **static, canvas-based website** built for Hawkathoon 2025. It uses Next.js App Router but functions primarily as a drag-and-drop digital collage.
+This is a **static, canvas-based website** built for Hawkathoon 2026. It uses Next.js App Router but functions primarily as a drag-and-drop digital collage.
 
 ## 🚀 Getting Started
 
