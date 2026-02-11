@@ -9,11 +9,11 @@ This website acts as a **Digital Canvas**. Instead of standard rows and columns,
 ## 2. Where is the content?
 All content is defined in `elements.ts` files inside the `app/` directory.
 
-- **Home**: `app/1/elements.ts`
-- **About**: `app/2/elements.ts`
-- **Register**: `app/3/elements.ts`
-- **Contact**: `app/4/elements.ts`
-- **Examples**: `app/5/elements.ts`
+- **Home**: `app/home/elements.ts`
+- **About**: `app/about/elements.ts`
+- **Register**: `app/register/elements.ts`
+- **Contact**: `app/contact/elements.ts`
+- **Examples**: `app/examples/elements.ts`
 
 ## 3. How to Edit Content
 Open any of the files above. You will see an array called `elements`. Each item in this array represents one thing on the screen.

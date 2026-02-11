@@ -14,11 +14,11 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     const links = [
-        { href: '/1', label: 'HOME', color: '#ff0000' },
-        { href: '/2', label: 'ABOUT', color: '#ffff00' },
-        { href: '/3', label: 'REGISTER', color: '#00ff00' },
-        { href: '/4', label: 'CONTACT', color: '#00ffff' },
-        { href: '/5', label: 'EXAMPLES', color: '#ff00ff' },
+        { href: '/home', label: 'HOME', color: '#ff0000' },
+        { href: '/about', label: 'ABOUT', color: '#ffff00' },
+        { href: '/register', label: 'REGISTER', color: '#00ff00' },
+        { href: '/contact', label: 'CONTACT', color: '#00ffff' },
+        { href: '/examples', label: 'EXAMPLES', color: '#ff00ff' },
     ];
 
     const toggleMenu = useCallback(() => {

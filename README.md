@@ -1,6 +1,6 @@
-# Hawkathoon 2025 Website
+# Hawkathoon 2026 Website
 
-This is a **static, canvas-based website** built for Hawkathoon 2025. It uses Next.js App Router but functions primarily as a drag-and-drop digital collage.
+This is a **static, canvas-based website** built for Hawkathoon 2026. It uses Next.js App Router but functions primarily as a drag-and-drop digital collage.
 
 ## Getting Started
 
@@ -22,6 +22,7 @@ This is a **static, canvas-based website** built for Hawkathoon 2025. It uses Ne
 
 ## Technology Stack
 
+<<<<<<< HEAD
 - **Next.js 16.1.6** - React framework with App Router
 - **React 19.2.3** - UI library
 - **TypeScript** - Type-safe JavaScript
@@ -29,6 +30,17 @@ This is a **static, canvas-based website** built for Hawkathoon 2025. It uses Ne
 - **GSAP 3.14.2** - Animation library for drag interactions
 - **ESLint** - Code linting
 - **React Compiler** - Automatic React optimizations
+=======
+- **`app/`**: Contains the pages (`home/`, `about/`, etc.) and the global layout.
+    - **`app/home/elements.ts`**: The "database" file where Home page content is defined.
+- **`components/`**: React components.
+    - **`Canvas.tsx`**: The main area that renders elements.
+    - **`Draggable.tsx`**: Wraps content to enable drag-and-drop.
+    - **`Navbar.tsx`**: The top navigation bar.
+- **`public/`**: Static assets.
+    - **`images/`**: Place all images here.
+    - **`videos/`**: Place background video here.
+>>>>>>> c02bf76fc98a268a7779219f0e9c060226120a4d
 
 ## Features
 
