@@ -1,8 +1,8 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { CanvasElement } from '../app/1/elements';
-import { enableDrag } from '../app/1/drag';
+import { CanvasElement } from '../app/home/elements';
+import { enableDrag } from '../app/home/drag';
 
 // Wrapper component that makes any content draggable.
 // Uses a ref to access the DOM node and attaches vanilla JS event listeners
