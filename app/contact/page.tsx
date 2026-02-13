@@ -15,10 +15,9 @@ export default function Page() {
 
     useEffect(() => {
         const ctx = gsap.context(() => {
-            const popups = [popup1Ref.current, popup2Ref.current, popup3Ref.current];
+            const popups = [popup1Ref.current, popup2Ref.current, popup3Ref.current].filter(Boolean);
 
             popups.forEach((popup) => {
-                if (!popup) return;
                 gsap.to(popup, {
                     x: "random(-20, 20)",
                     y: "random(-20, 20)",
@@ -31,13 +30,15 @@ export default function Page() {
             });
 
             // Specific entrance
-            gsap.from(popups, {
-                scale: 0,
-                opacity: 0,
-                duration: 0.5,
-                stagger: 0.2,
-                ease: "back.out(1.7)"
-            });
+            if (popups.length > 0) {
+                gsap.from(popups, {
+                    scale: 0,
+                    opacity: 0,
+                    duration: 0.5,
+                    stagger: 0.2,
+                    ease: "back.out(1.7)"
+                });
+            }
 
         }, containerRef);
         return () => ctx.revert();
@@ -48,17 +49,17 @@ export default function Page() {
                 {/* Hero Section */}
                 <div style={{ height: '100vh', width: '100%', position: 'relative', overflow: 'hidden' }}>
                     <StaticBackground />
-                    <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
-                        <div ref={popup1Ref} className="bg-white border-4 border-blue-600 p-6 shadow-[20px_20px_0px_0px_rgba(0,0,255,1)] transform -rotate-12 absolute top-1/6 left-1/4 z-30">
-                            <h2 className="text-4xl font-black text-blue-600">CALL NOW!!!</h2>
-                            <p className="text-xl">FREE ADVICE (NOT)</p>
+                    <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none px-3 sm:px-4">
+                        <div className="bg-white border-2 sm:border-4 border-blue-600 p-3 sm:p-4 md:p-6 shadow-[10px_10px_0px_0px_rgba(0,0,255,1)] sm:shadow-[15px_15px_0px_0px_rgba(0,0,255,1)] md:shadow-[20px_20px_0px_0px_rgba(0,0,255,1)] transform -rotate-12 absolute top-[16.666%] left-[10%] sm:left-1/4 z-30">
+                            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blue-600 tracking-normal">CALL NOW!!!</h2>
+                            <p className="text-sm sm:text-base md:text-lg lg:text-xl tracking-normal">FREE ADVICE (NOT)</p>
                         </div>
-                        <div ref={popup2Ref} className="bg-yellow-300 border-4 border-black p-8 shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] transform rotate-6 z-20">
-                            <h1 className="text-6xl md:text-9xl font-black text-black">CONTACT<br />US???</h1>
+                        <div className="bg-yellow-300 border-2 sm:border-4 border-black p-4 sm:p-6 md:p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] sm:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] md:shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] transform rotate-6 z-20">
+                            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-9xl font-bold text-black tracking-normal">CONTACT<br />US???</h1>
                         </div>
-                        <div ref={popup3Ref} className="bg-pink-500 border-4 border-white p-4 shadow-[10px_10px_0px_0px_rgba(255,255,255,1)] transform rotate-12 absolute bottom-1/4 right-1/4 z-30">
-                            <h2 className="text-3xl font-black text-white">WIN AN IPHONE*</h2>
-                            <p className="text-sm text-white">*just kidding</p>
+                        <div className="bg-pink-500 border-2 sm:border-4 border-white p-2 sm:p-3 md:p-4 shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] sm:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] md:shadow-[10px_10px_0px_0px_rgba(255,255,255,1)] transform rotate-12 absolute bottom-1/4 right-[10%] sm:right-1/4 z-30">
+                            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white tracking-normal">WIN AN IPHONE*</h2>
+                            <p className="text-xs sm:text-sm text-white tracking-normal">*just kidding</p>
                         </div>
                     </div>
                 </div>
@@ -67,18 +68,18 @@ export default function Page() {
 
                 {/* Contact Section */}
                 <Section id="contact" title="TALK TO US" backgroundColor="#FF00FF" textColor="#fff" transform="rotate(-2deg)">
-                    <div className="w-full max-w-5xl flex flex-col md:flex-row gap-8 justify-center items-center">
-                        <a href="mailto:hello@hawkathon.com" className="group relative block p-8 border-4 border-white bg-black hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-110">
-                            <h3 className="text-4xl md:text-6xl font-black">EMAIL US</h3>
-                            <p className="text-xl mt-4 opacity-70 group-hover:opacity-100">IF YOU DARE</p>
-                            <div className="absolute -top-6 -right-6 bg-yellow-400 text-black font-bold p-2 rotate-12 border-2 border-black">
+                    <div className="w-full max-w-5xl flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 justify-center items-center px-2 sm:px-4">
+                        <a href="mailto:hello@hawkathon.com" className="group relative block p-4 sm:p-6 md:p-8 border-2 sm:border-4 border-white bg-black hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-110 w-full sm:w-auto text-center">
+                            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold tracking-normal">EMAIL US</h3>
+                            <p className="text-base sm:text-lg md:text-xl mt-2 sm:mt-3 md:mt-4 opacity-70 group-hover:opacity-100 tracking-normal">IF YOU DARE</p>
+                            <div className="absolute -top-4 sm:-top-6 -right-4 sm:-right-6 bg-yellow-400 text-black font-bold p-1 sm:p-2 rotate-12 border-2 border-black text-xs sm:text-sm md:text-base tracking-normal">
                                 SLOW REPLY
                             </div>
                         </a>
-                        <a href="#" className="group relative block p-8 border-4 border-white bg-black hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-110">
-                            <h3 className="text-4xl md:text-6xl font-black">DISCORD</h3>
-                            <p className="text-xl mt-4 opacity-70 group-hover:opacity-100">IT'S CHAOS HERE</p>
-                            <div className="absolute -top-6 -left-6 bg-cyan-400 text-black font-bold p-2 -rotate-12 border-2 border-black">
+                        <a href="#" className="group relative block p-4 sm:p-6 md:p-8 border-2 sm:border-4 border-white bg-black hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-110 w-full sm:w-auto text-center">
+                            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold tracking-normal">DISCORD</h3>
+                            <p className="text-base sm:text-lg md:text-xl mt-2 sm:mt-3 md:mt-4 opacity-70 group-hover:opacity-100 tracking-normal">IT'S CHAOS HERE</p>
+                            <div className="absolute -top-4 sm:-top-6 -left-4 sm:-left-6 bg-cyan-400 text-black font-bold p-1 sm:p-2 -rotate-12 border-2 border-black text-xs sm:text-sm md:text-base tracking-normal">
                                 24/7 SPAM
                             </div>
                         </a>
@@ -87,15 +88,15 @@ export default function Page() {
 
                 {/* Sponsors Section */}
                 <Section id="sponsors-cta" title="GIVE US MONEY" backgroundColor="#FFFF00" transform="rotate(2deg)">
-                    <div className="max-w-4xl text-center space-y-8">
-                        <h2 className="text-4xl md:text-7xl font-black leading-tight">
-                            WE NEED <span className="bg-black text-white px-4">CASH</span>.<br />YOU NEED <span className="bg-black text-white px-4">CLOUT</span>.
+                    <div className="max-w-4xl text-center space-y-4 sm:space-y-6 md:space-y-8 px-2 sm:px-4">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold leading-tight tracking-normal">
+                            WE NEED <span className="bg-black text-white px-2 sm:px-3 md:px-4">CASH</span>.<br />YOU NEED <span className="bg-black text-white px-2 sm:px-3 md:px-4">CLOUT</span>.
                         </h2>
-                        <p className="text-2xl font-bold bg-white inline-block p-4 border-4 border-black transform -rotate-1">
+                        <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold bg-white inline-block p-2 sm:p-3 md:p-4 border-2 sm:border-4 border-black transform -rotate-1 tracking-normal">
                             SPONSOR THE MOST CHAOTIC HACKATHON OF 2026.
                         </p>
                         <br />
-                        <button className="text-3xl md:text-5xl border-8 border-black bg-green-500 hover:bg-green-400 px-12 py-6 font-black shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-2 hover:translate-y-2 transition-all">
+                        <button className="text-xl sm:text-2xl md:text-3xl lg:text-5xl border-4 sm:border-6 md:border-8 border-black bg-green-500 hover:bg-green-400 px-6 sm:px-8 md:px-12 py-3 sm:py-4 md:py-6 font-bold shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] sm:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] md:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sm:hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] md:hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 md:hover:translate-x-2 md:hover:translate-y-2 transition-all tracking-normal">
                             SPONSOR NOW $$$
                         </button>
                     </div>

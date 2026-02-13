@@ -32,14 +32,14 @@ const Marquee: React.FC<MarqueeProps> = ({
                     animation: `marquee-${direction} ${speed}s linear infinite`,
                 }}
             >
-                <span className="text-4xl font-bold uppercase mx-4">{text}</span>
-                <span className="text-4xl font-bold uppercase mx-4">{text}</span>
-                <span className="text-4xl font-bold uppercase mx-4">{text}</span>
-                <span className="text-4xl font-bold uppercase mx-4">{text}</span>
-                <span className="text-4xl font-bold uppercase mx-4">{text}</span>
-                <span className="text-4xl font-bold uppercase mx-4">{text}</span>
-                <span className="text-4xl font-bold uppercase mx-4">{text}</span>
-                <span className="text-4xl font-bold uppercase mx-4">{text}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase mx-2 sm:mx-3 md:mx-4 tracking-normal">{text}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase mx-2 sm:mx-3 md:mx-4 tracking-normal">{text}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase mx-2 sm:mx-3 md:mx-4 tracking-normal">{text}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase mx-2 sm:mx-3 md:mx-4 tracking-normal">{text}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase mx-2 sm:mx-3 md:mx-4 tracking-normal">{text}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase mx-2 sm:mx-3 md:mx-4 tracking-normal">{text}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase mx-2 sm:mx-3 md:mx-4 tracking-normal">{text}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase mx-2 sm:mx-3 md:mx-4 tracking-normal">{text}</span>
             </div>
             <div
                 className="inline-block"
@@ -47,14 +47,14 @@ const Marquee: React.FC<MarqueeProps> = ({
                     animation: `marquee-${direction} ${speed}s linear infinite`,
                 }}
             >
-                <span className="text-4xl font-bold uppercase mx-4">{text}</span>
-                <span className="text-4xl font-bold uppercase mx-4">{text}</span>
-                <span className="text-4xl font-bold uppercase mx-4">{text}</span>
-                <span className="text-4xl font-bold uppercase mx-4">{text}</span>
-                <span className="text-4xl font-bold uppercase mx-4">{text}</span>
-                <span className="text-4xl font-bold uppercase mx-4">{text}</span>
-                <span className="text-4xl font-bold uppercase mx-4">{text}</span>
-                <span className="text-4xl font-bold uppercase mx-4">{text}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase mx-2 sm:mx-3 md:mx-4 tracking-normal">{text}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase mx-2 sm:mx-3 md:mx-4 tracking-normal">{text}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase mx-2 sm:mx-3 md:mx-4 tracking-normal">{text}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase mx-2 sm:mx-3 md:mx-4 tracking-normal">{text}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase mx-2 sm:mx-3 md:mx-4 tracking-normal">{text}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase mx-2 sm:mx-3 md:mx-4 tracking-normal">{text}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase mx-2 sm:mx-3 md:mx-4 tracking-normal">{text}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold uppercase mx-2 sm:mx-3 md:mx-4 tracking-normal">{text}</span>
             </div>
             <style jsx>{`
         @keyframes marquee-left {
