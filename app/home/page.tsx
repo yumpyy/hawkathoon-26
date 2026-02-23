@@ -59,15 +59,19 @@ export default function Page() {
                     <div className="w-full flex flex-col gap-4 sm:gap-6 md:gap-8 max-w-4xl items-center px-2 sm:px-4">
                         <div className="gsap-prize-card w-full border-2 sm:border-4 border-black p-6 sm:p-8 md:p-10 lg:p-12 bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] md:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] text-center">
                             <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 sm:mb-3 md:mb-4 tracking-normal">1ST PLACE</h3>
-                            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold tracking-normal">₹50,000 + BRAGGING RIGHTS + WEIRD TROPHY</p>
+                            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold tracking-normal">PRIZE TO BE REVEALED</p>
                         </div>
                         <div className="gsap-prize-card w-[95%] sm:w-[90%] md:w-[85%] border-2 sm:border-4 border-black p-5 sm:p-6 md:p-8 lg:p-10 bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] md:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] text-center">
                             <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 md:mb-4 tracking-normal">2ND PLACE</h3>
-                            <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold tracking-normal">₹30,000 + SWAG + HIGH FIVE</p>
+                            <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold tracking-normal">PRIZE TO BE REVEALED</p>
                         </div>
                         <div className="gsap-prize-card w-[90%] sm:w-[80%] md:w-[70%] border-2 sm:border-4 border-black p-4 sm:p-5 md:p-6 lg:p-8 bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] md:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] text-center">
                             <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 sm:mb-3 md:mb-4 tracking-normal">3RD PLACE</h3>
-                            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-bold tracking-normal">₹15,000 + STICKERS</p>
+                            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-bold tracking-normal">PRIZE TO BE REVEALED</p>
+                        </div>
+                        <div className="gsap-prize-card w-[85%] sm:w-[75%] md:w-[65%] border-2 sm:border-4 border-black p-4 sm:p-5 md:p-6 lg:p-8 bg-yellow-300 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] md:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] text-center">
+                            <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 sm:mb-3 md:mb-4 tracking-normal">ALL PARTICIPANTS</h3>
+                            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-bold tracking-normal">CERTIFICATES FOR EVERYONE</p>
                         </div>
                     </div>
                 </Section>
@@ -79,7 +83,7 @@ export default function Page() {
                             <div className="gsap-sponsor-item text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-300 hover:text-gray-500 transition-colors p-3 sm:p-4 md:p-6 lg:p-8 border-2 sm:border-4 border-dashed border-gray-300 tracking-normal">GOOGLE?</div>
                             <div className="gsap-sponsor-item text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-300 hover:text-gray-500 transition-colors p-3 sm:p-4 md4:p-6 lg:p-8 border-2 sm:border-4 border-dashed border-gray-300 tracking-normal">MICROSOFT?</div>
                             <div className="gsap-sponsor-item text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-300 hover:text-gray-500 transition-colors p-3 sm:p-4 md:p-6 lg:p-8 border-2 sm:border-4 border-dashed border-gray-300 tracking-normal">AMAZON?</div>
-                            <div className="gsap-sponsor-item text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-300 hover:text-gray-500 transition-colors p-3 sm:p-4 md:p-6 lg:p-8 border-2 sm:border-4 border-dashed border-gray-300 tracking-normal">YOUR MOM</div>
+                            <div className="gsap-sponsor-item text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-300 hover:text-gray-500 transition-colors p-3 sm:p-4 md:p-6 lg:p-8 border-2 sm:border-4 border-dashed border-gray-300 tracking-normal">MAYURI?</div>
                         </div>
                         <p className="text-center mt-4 sm:mt-6 md:mt-8 text-base sm:text-lg md:text-xl text-gray-500 font-bold tracking-normal">(SERIOUSLY, CALL US PLS)</p>
                     </div>

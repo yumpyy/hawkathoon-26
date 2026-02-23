@@ -102,20 +102,19 @@ export default function Page() {
                         <div className="border-2 sm:border-4 border-white p-4 sm:p-6 md:p-8 lg:p-12 bg-gray-900 transform -rotate-2 hover:rotate-0 transition-all duration-300">
                             <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-green-400 mb-2 sm:mb-3 md:mb-4 tracking-normal">VIT BHOPAL</h3>
                             <p className="text-base sm:text-lg md:text-2xl lg:text-3xl text-white tracking-normal">
-                                SOMEWHERE ON EARTH.<br />
-                                (MAYBE).<br />
-                                GPS MIGHT FAIL.<br />
-                                BRING A COMPASS.
+                                AB-1 206<br />
+                                27 FEB<br />
+                                10:00 AM - 12:30 PM
                             </p>
                         </div>
                         <div className="border-2 sm:border-4 border-white p-4 sm:p-6 md:p-8 lg:p-12 bg-blue-900 transform rotate-2 hover:rotate-0 transition-all duration-300 flex flex-col justify-center items-center text-center">
                             <div className="text-5xl sm:text-6xl md:text-8xl mb-2 sm:mb-3 md:mb-4">📍</div>
-                            <p className="text-lg sm:text-xl md:text-2xl font-bold tracking-normal">COORDINATES: <br />NULL, NULL</p>
+                            <p className="text-lg sm:text-xl md:text-2xl font-bold tracking-normal">AB-1 206<br />VIT BHOPAL</p>
                         </div>
                     </div>
                 </Section>
 
-                <Marquee text="404 LOCATION NOT FOUND • TRY REFRESHING • OR JUST SCREAM • " speed={20} direction="right" backgroundColor="#00ffff" />
+                <Marquee text="AB-1 206 • 27 FEB • 10:00 AM - 12:30 PM • SEE YOU THERE • " speed={20} direction="right" backgroundColor="#00ffff" />
 
                 {/* Footer Section */}
                 <Section id="footer" title="EXIT" backgroundColor="#ff0000" textColor="#fff" transform="rotate(1deg) tracking-normal">

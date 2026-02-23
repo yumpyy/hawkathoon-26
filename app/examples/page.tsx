@@ -97,8 +97,8 @@ export default function Page() {
                 <Section id="footer" title="JOIN US?" backgroundColor="#000" textColor="#fff" transform="rotate(0deg)">
                     <div className="max-w-4xl mx-auto text-center px-2 sm:px-4">
                         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-6 md:mb-8 font-mono tracking-normal">ARE YOU BRAVE ENOUGH?</p>
-                        <a href="https://google.com" target="_blank" className="inline-block border-2 sm:border-4 border-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-base sm:text-lg md:text-xl lg:text-2xl font-bold bg-blue-600 hover:bg-white hover:text-blue-600 transition-colors uppercase tracking-normal">
-                            REGISTER NOW
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqBoOabXJ1uFNL2GDybUIlYaGxHvtBRZfvD8WHW36JHvGYVQ/viewform" target="_blank" className="inline-block border-2 sm:border-4 border-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-base sm:text-lg md:text-xl lg:text-2xl font-bold bg-blue-600 hover:bg-white hover:text-blue-600 transition-colors uppercase tracking-normal">
+                            REGISTER NOW!
                         </a>
                     </div>
                 </Section>
