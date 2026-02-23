@@ -70,7 +70,7 @@ export const elements: CanvasElement[] = [
         y: 200,
         zIndex: 90,
         draggable: true,
-        text: 'LOCATION: TBD',
+        text: 'LOCATION: AB-1 206',
         style: {
             fontSize: '20px',
             fontWeight: 'bold',
@@ -87,7 +87,7 @@ export const elements: CanvasElement[] = [
         y: 270,
         zIndex: 90,
         draggable: true,
-        text: 'WHEN: TBH',
+        text: 'WHEN: 27 FEB',
         style: {
             fontSize: '20px',
             fontWeight: 'bold',
@@ -105,7 +105,7 @@ export const elements: CanvasElement[] = [
         y: 340,
         zIndex: 90,
         draggable: true,
-        text: 'TIME: TBH',
+        text: 'TIME: 10:00 AM - 12:30 PM',
         style: {
             fontSize: '20px',
             fontWeight: 'bold',
@@ -185,11 +185,11 @@ export const elements: CanvasElement[] = [
         id: 'el-reg-vit',
         type: 'link',
         x: 875,
-        y: 475,
+        y: 525,
         zIndex: 110,
         draggable: true,
-        text: 'VIT STUDENTS REGISTER',
-        href: 'https://forms.gle/SbnGYzpEFyGXrVVC7',
+        text: 'REGISTER NOW!',
+        href: 'https://docs.google.com/forms/d/e/1FAIpQLSfqBoOabXJ1uFNL2GDybUIlYaGxHvtBRZfvD8WHW36JHvGYVQ/viewform',
         style: {
             backgroundColor: '#fff',
             border: '3px solid #000',
@@ -200,29 +200,6 @@ export const elements: CanvasElement[] = [
             boxShadow: '8px 8px 0px #000',
             fontWeight: 'bold',
             transform: 'rotate(-2deg)',
-            cursor: 'pointer'
-        }
-    },
-    {
-        id: 'el-reg-ext',
-        type: 'link',
-        x: 900,
-        y: 575,
-        zIndex: 110,
-        draggable: true,
-        text: 'EXTERNAL REGISTRATION',
-        href: 'https://forms.gle/jvTTsyrwFgxRahHm9',
-        style: {
-            backgroundColor: '#000',
-            color: '#fff',
-            border: '3px solid #fff',
-            padding: '10px',
-            fontSize: '18px',
-            maxWidth: '220px',
-            textAlign: 'center',
-            boxShadow: '8px 8px 0px #ff00ff',
-            fontWeight: 'bold',
-            transform: 'rotate(3deg)',
             cursor: 'pointer'
         }
     },

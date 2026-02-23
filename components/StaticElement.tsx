@@ -1,5 +1,5 @@
 import React from 'react';
-import { CanvasElement } from '../app/1/elements';
+import { CanvasElement } from '../app/home/elements';
 
 export default function StaticElement(props: CanvasElement) {
     const { x, y, zIndex, width, height, type, src, text, href, style } = props;

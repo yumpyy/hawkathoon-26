@@ -22,7 +22,7 @@ const Section: React.FC<SectionProps> = ({
   return (
     <section
       id={id}
-      className={`relative w-full min-h-screen flex flex-col justify-center items-center py-20 px-4 md:px-10 overflow-hidden ${className}`}
+      className={`relative w-full min-h-screen flex flex-col justify-center items-center py-12 sm:py-16 md:py-20 px-3 sm:px-6 md:px-10 overflow-hidden ${className}`}
       style={{
         backgroundColor,
         color: textColor,
@@ -37,16 +37,17 @@ const Section: React.FC<SectionProps> = ({
         }}
       >
         <h2
-          className="gsap-title text-6xl md:text-8xl font-black mb-12 uppercase"
+          className="gsap-title text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 sm:mb-8 md:mb-12 uppercase tracking-normal"
           style={{
             fontFamily: 'Impact, sans-serif',
-            textShadow: `4px 4px 0px ${textColor === '#000' ? '#fff' : '#000'}`,
-            WebkitTextStroke: `2px ${textColor === '#000' ? '#000' : '#fff'}`,
+            textShadow: `2px 2px 0px ${textColor === '#000' ? '#fff' : '#000'}`,
+            WebkitTextStroke: `0.5px ${textColor === '#000' ? '#000' : '#fff'}`,
+            letterSpacing: '0em',
           }}
         >
           {title}
         </h2>
-        <div className="gsap-content w-full flex flex-col items-center text-xl md:text-2xl font-bold font-mono">
+        <div className="gsap-content w-full flex flex-col items-center text-base sm:text-lg md:text-xl lg:text-2xl font-bold font-mono tracking-normal">
           {children}
         </div>
       </div>
